@@ -1,0 +1,165 @@
+/* Diesen Code in eine Datei namens styles.css kopieren */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+button:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* --- NEUE STILE --- */
+#verwaltung {
+    margin-bottom: 20px;
+}
+#neuesSpielButton {
+    background-color: #dc3545; /* Rot */
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+#neuesSpielButton:hover {
+    background-color: #c82333;
+}
+#exportButton {
+    background-color: #28a745; /* Grün */
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+#exportButton:hover {
+    background-color: #218838;
+}
+/* ------------------ */
+
+.startButton {
+    background-color: #28a745;
+    font-size: 1rem;
+    padding: 15px 20px;
+}
+.startButton:hover {
+    background-color: #218838;
+}
+
+#pauseButton {
+    background-color: #ffc107;
+    color: #333;
+}
+#pauseButton:hover {
+    background-color: #e0a800;
+}
+
+#zeitSprung {
+    margin-top: -15px; 
+    margin-bottom: 10px;
+}
+.zeitButton {
+    font-size: 1rem;
+    padding: 8px 15px;
+    margin: 0 5px;
+    background-color: #6c757d;
+}
+.zeitButton:hover {
+    background-color: #5a6268;
+}
+
+.versteckt {
+    display: none;
+}
+#timerAnzeige {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #333;
+}
+#spielSteuerung button {
+    background-color: #17a2b8;
+}
+#spielSteuerung button:hover {
+    background-color: #117a8b;
+}
+
+#wechselButton {
+    background-color: #6f42c1; /* Lila */
+}
+#wechselButton:hover {
+    background-color: #5a32a3;
+}
+
+#aktionVorauswahl button {
+    background-color: #343a40; /* Dunkelgrau */
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto;
+}
+#aktionVorauswahl button:hover {
+    background-color: #23272b;
+}
+#aktionAbbrechenButton {
+    background-color: #dc3545;
+}
+#aktionAbbrechenButton:hover {
+    background-color: #c82333;
+}
+
+#kommentarBereich {
+    margin-top: 20px;
+}
+#kommentarInput {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+#protokoll {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+#protokoll h3 {
+    text-align: center;
+}
+#protokoll p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
+    word-break: break-word;
+}
+.loeschButton {
+    font-size: 0.9rem;
+    padding: 3px 10px;
+    margin-left: 10px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+.loeschButton:hover {
+    background-color: #c82333;
+}

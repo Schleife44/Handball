@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiel-Tracker (V9 - mit Speicher)</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Spiel-Tracker</h1>
+
+    <div id="verwaltung" class="versteckt">
+        <button id="neuesSpielButton">Neues Spiel</button>
+        <button id="exportButton">Protokoll als .txt</button>
+    </div>
+
+    <div id="startBereich">
+        <button id="startButtonStart7" class="startButton">Spielstart Start 7</button>
+        <button id="startButtonBank" class="startButton">Spielstart Bank</button>
+    </div>
+
+    <div id="timerAnzeige" class="versteckt">00:00</div>
+    
+    <div id="zeitSprung" class="versteckt">
+        <button id="zurueckButton" class="zeitButton">-30s</button>
+        <button id="vorButton" class="zeitButton">+30s</button>
+    </div>
+
+    <button id="pauseButton" class="versteckt">Pause</button>
+
+    <div id="spielSteuerung" class="versteckt">
+        <button id="torButton">Tor</button>
+        <button id="siebenMeterButton">7Meter rausgeholt</button>
+        <button id="aktionButton">Gute Aktion</button>
+    </div>
+
+    <button id="wechselButton" class="versteckt"></button>
+
+    <div id="aktionVorauswahl" class="versteckt">
+        <h3>Gute Aktion:</h3>
+        <button id="abwehrButton">Abwehr</button>
+        <button id="tgPassButton">TG Pass</button>
+        <button id="guterPassButton">Guter Pass</button>
+        <button id="anderesButton">Anderes</button>
+        <button id="aktionAbbrechenButton">Abbrechen</button>
+    </div>
+
+    <div id="kommentarBereich" class="versteckt">
+        <label for="kommentarInput">Kommentar (optional):</label><br>
+        <input type="text" id="kommentarInput" placeholder="Beschreibe die Aktion...">
+        <br>
+        <button id="kommentarSpeichernButton">Speichern</button>
+    </div>
+
+    <div id="protokoll" class="versteckt">
+        <h3>Protokoll</h3>
+        <div id="protokollAusgabe"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
